@@ -1,0 +1,113 @@
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    margin: 10px;
+    background-color: Azure ;
+}
+h1 {
+    font-family: Raleway, serif;
+}
+h2 {
+    margin: 0;
+}
+p {
+    font-family: Roboto, serif;
+    margin: 0;
+}
+input {
+    font-family: Roboto, serif;
+    height: 30px;
+    border-radius: 10px;
+    height: 20px;
+    border-color: beige;
+}
+button {
+    font-family: Roboto, serif;
+    border-radius: 10px;
+    border-color: beige;
+    width: 70px;
+    height: 26px;
+    background-color: azure;
+}
+#flexcontainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+    background-color: beige;
+} 
+#flexbox-1, #flexbox-2, #flexbox-3, #flexbox-4, #flexbox-5 {
+    padding: 20px;
+    height: 95%px;
+    width: 90%px;
+}
+#flexbox-1 {
+    background-color: coral;
+}
+#flexbox-2 {
+    background-color: crimson;
+}
+#flexbox-3 {
+    background-color: chocolate;
+}
+#flexbox-4 {
+    background-color: brown;   
+}
+#flexbox-5 {
+    background-color: DarkGoldenRod;
+}
+
+@media only screen and (max-width: 376px) {
+  body {
+    background-color: black;
+    height: 98%;
+  }
+  #flexcontainer {
+    height: 95%;
+    width: 99%;
+    padding: 10px;
+  }
+  #flexbox-1, #flexbox-2, #flexbox-3, #flexbox-4 {
+    padding: 20px;
+    height: 25%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: beige;
+    height: 98%;
+  }
+  #flexcontainer {
+    background-color: darkred;
+    height: 95%;
+    width: 99%;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  #flexbox-1, #flexbox-2, #flexbox-3, #flexbox-4 {
+    justify-content: center;
+    padding: 20px;
+    height: 75px;
+    width: 35%;
+    margin: auto;
+  }
+  #flexbox-1 {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 1255px) {
+  body {
+    background-color: black;
+    height: 98%;
+  }
+  #flexcontainer {
+    width: 99%;
+    background-color: #efefef;
+  }
+  #flexbox-1, #flexbox-2, #flexbox-3, #flexbox-4 {
+    width: 90%;
+
+  }
